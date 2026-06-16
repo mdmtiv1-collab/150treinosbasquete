@@ -700,18 +700,33 @@
   .testimonial-img-card {
     flex: 0 0 290px;
   }
-}
-
-@media (max-width: 500px) {
   .social-proof-container {
+    top: 75px;
+    bottom: auto;
     left: 10px;
-    bottom: 20px;
     right: 10px;
     max-width: none;
+    align-items: center;
   }
   .social-proof-toast {
-    max-width: none;
+    max-width: 300px;
     width: 100%;
+    padding: 8px 12px;
+    gap: 8px;
+  }
+  .toast-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+  }
+  .toast-title {
+    font-size: 0.8rem;
+  }
+  .toast-body {
+    font-size: 0.75rem;
+  }
+  .toast-time {
+    font-size: 0.65rem;
   }
 }
 
