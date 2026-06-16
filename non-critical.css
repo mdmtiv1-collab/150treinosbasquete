@@ -701,15 +701,15 @@
     flex: 0 0 290px;
   }
   .social-proof-container {
-    top: 75px;
-    bottom: auto;
-    left: 10px;
-    right: 10px;
+    bottom: 20px;
+    top: auto;
+    left: 15px;
+    right: auto;
     max-width: none;
-    align-items: center;
+    align-items: flex-start;
   }
   .social-proof-toast {
-    max-width: 300px;
+    max-width: 280px;
     width: 100%;
     padding: 8px 12px;
     gap: 8px;
