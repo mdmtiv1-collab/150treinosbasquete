@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <script>
+    window.pixelId = "6a30b2f90360c4b82e5ca529";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+
+  <script
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+    data-utmify-prevent-xcod-sck
+    data-utmify-prevent-subids
+    async
+    defer
+  ></script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>+150 Exercícios de Basquete em Vídeo | Pacote Completo</title>
@@ -681,29 +698,5 @@ body {
 
   <!-- Asynchronous Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-
-  <!-- Dynamic UTMify Loader on window load event -->
-  <script>
-    window.addEventListener('load', function() {
-      // Load UTMify Pixel
-      window.pixelId = "6a30b2f90360c4b82e5ca529";
-      var pixelScript = document.createElement("script");
-      pixelScript.async = true;
-      pixelScript.defer = true;
-      pixelScript.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
-      document.head.appendChild(pixelScript);
-
-      // Load UTMify Latest.js
-      var utmifyScript = document.createElement("script");
-      utmifyScript.async = true;
-      utmifyScript.defer = true;
-      utmifyScript.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
-      utmifyScript.setAttribute("data-utmify-prevent-xcod-sck", "");
-      utmifyScript.setAttribute("data-utmify-prevent-subids", "");
-      document.head.appendChild(utmifyScript);
-      console.log('UTMify scripts loaded dynamically on window load.');
-    });
-  </script>
-
 </body>
 </html>
