@@ -723,6 +723,31 @@
   }
 }
 
+/* CRO Adjustments */
+.value-badge {
+  display: inline-block;
+  align-self: center;
+  background: rgba(255, 174, 25, 0.1);
+  border: 1px dashed var(--accent);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  letter-spacing: 0.3px;
+}
+
+.urgency-alert {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #ef4444;
+  margin-top: 0.75rem;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
 @media (min-width: 1200px) {
   .testimonials-scroll-container {
     justify-content: center;

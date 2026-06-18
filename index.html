@@ -128,9 +128,27 @@ body {
   border-radius: 50px;
   font-size: 0.8rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+}
+
+.hero-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.hero-rating .stars {
+  letter-spacing: 1px;
+  color: var(--accent);
+}
+
+.hero-rating .rating-text {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* Headline */
@@ -299,6 +317,10 @@ body {
   <!-- Hero Section -->
   <header class="hero-section">
     <div class="hero-badge">⚡ Biblioteca Digital Completa</div>
+    <div class="hero-rating">
+      <span class="stars">⭐⭐⭐⭐⭐</span>
+      <span class="rating-text">4.9/5 (1.200+ treinadores e pais aprovam)</span>
+    </div>
     <h1>+150 Exercícios de <span>Basquete em Vídeo</span></h1>
 
     <!-- Centered Mockup Image -->
@@ -488,6 +510,7 @@ body {
             <span class="price-original">de R$ 49,90</span>
             <h4>R$ 24<span>,90</span></h4>
           </div>
+          <div class="value-badge">🎁 R$ 120,00 em Bônus Inclusos Grátis</div>
 
           <div class="plan-features">
             <div class="plan-feature-item">
@@ -523,6 +546,7 @@ body {
           <a href="https://pay.wiapy.com/rGyyJ-J4Q2W" class="btn-primary" style="display: block; width: 100%; text-align: center; margin-top: auto;">
             Quero o Plano Premium
           </a>
+          <div class="urgency-alert">🔥 Preço promocional garantido apenas hoje!</div>
           <div class="security-badges-container">
             <div class="badge-item">🔒 Compra 100% Segura</div>
             <div class="badge-item">🛡️ Garantia de 7 Dias</div>
