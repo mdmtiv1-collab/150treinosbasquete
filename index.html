@@ -182,7 +182,7 @@ body {
 /* Mockup Image Stacked */
 .hero-image-container {
   width: 100%;
-  max-width: 380px;
+  max-width: 900px;
   margin: 0 auto 1.25rem auto;
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -313,7 +313,6 @@ body {
     letter-spacing: -1px;
   }
   .hero-image-container {
-    max-width: 300px;
     margin-bottom: 0.75rem;
   }
   .hero-subheadline {
@@ -342,12 +341,13 @@ body {
     <h1>+150 Exercícios de <span>Basquete em Vídeo</span></h1>
     <div class="members-area-tag">Veja nossa área de membros 👇</div>
 
-    <!-- Centered Video (GIF Behavior) -->
+    <!-- Centered Mockup Image -->
     <div class="hero-image-container">
-      <video autoplay loop muted playsinline class="hero-stacked-img" width="700" height="400" preload="auto">
-        <source src="videos/basquete.mp4" type="video/mp4">
-        Seu navegador não suporta vídeos.
-      </video>
+      <picture>
+        <source media="(max-width: 768px)" srcset="images/hero_mobile.webp" type="image/webp">
+        <source media="(min-width: 769px)" srcset="images/hero_desktop.webp" type="image/webp">
+        <img src="images/hero.jpg" alt="150 Treinos de Basquete Mockups" class="hero-stacked-img" width="700" height="400" loading="eager" fetchpriority="high">
+      </picture>
     </div>
 
     <div class="hero-rating">
