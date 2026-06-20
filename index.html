@@ -346,7 +346,7 @@ body {
       <picture>
         <source media="(max-width: 768px)" srcset="images/hero_mobile.webp" type="image/webp">
         <source media="(min-width: 769px)" srcset="images/hero_desktop.webp" type="image/webp">
-        <img src="images/hero.jpg" alt="150 Treinos de Basquete Mockups" class="hero-stacked-img" width="700" height="400" loading="eager" fetchpriority="high">
+        <img src="images/hero.jpg" alt="150 Treinos de Basquete Mockups" class="hero-stacked-img" width="850" height="638" loading="eager" fetchpriority="high">
       </picture>
     </div>
 
@@ -715,11 +715,22 @@ body {
     const dots = document.querySelectorAll('.scroll-indicator-dots .dot');
 
     if (scrollContainer && dots.length > 0) {
-      scrollContainer.addEventListener('scroll', () => {
-        const scrollLeft = scrollContainer.scrollLeft;
+      let cardWidth = 0;
+      const updateCardWidth = () => {
         const card = scrollContainer.querySelector('.testimonial-img-card');
-        if (!card) return;
-        const cardWidth = card.offsetWidth + 24; // width + gap (1.5rem = 24px)
+        if (card) {
+          cardWidth = card.offsetWidth + 24; // width + gap (1.5rem = 24px)
+        }
+      };
+
+      // Calculate once on load
+      updateCardWidth();
+      window.addEventListener('resize', updateCardWidth);
+
+      scrollContainer.addEventListener('scroll', () => {
+        if (!cardWidth) updateCardWidth();
+        if (!cardWidth) return;
+        const scrollLeft = scrollContainer.scrollLeft;
         const activeIndex = Math.round(scrollLeft / cardWidth);
 
         dots.forEach((dot, idx) => {
@@ -729,7 +740,7 @@ body {
             dot.classList.remove('active');
           }
         });
-      });
+      }, { passive: true });
     }
   </script>
 
